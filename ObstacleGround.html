@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- * Meta tags -->
+    <meta name="description" content="After a hiatus of almost 1 year, Notre Dame Outward Bound Adventure Club (OBAC) is finally back 
+    with another season of the biggest institutionalized adventure festival in the country, the National Adventure Festival. 
+    Following the successful organization of the 5th National Adventure Festival last year and seeing the overwhelming response,
+     we have decided to make another statement this year by taking it to the next level in the 6th National Adventure Festival 
+     with some of our popular events along with some new ones with the hope to live up to your expectation and surpass it. 
+    The 6th National Adventure Festival will take place on May 26th & 27th, 2023 at the premises of Notre Dame College. 
+    Prepare yourself for a grander journey in this edition of National Adventure Festival. Stay tuned!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ndcobac.com/" />
+    <meta property="og:image" content="https://ndcobac.comimg/8th NAF-01-01.png" />
+    <title>8th NAF | NDCOBAC</title>
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/events.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/ticket.css">
+   <!-- * /Meta tags -->
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="ndcobac.com">
+<meta property="twitter:url" content="https://ndcobac.com/">
+<meta name="twitter:title" content="6th National Adventure Festival 2023">
+<meta name="twitter:description" content="Notre Dame Outward Bound Adventure Club is back with the 6th season of the National Adventure Festival taking place at the premises of Notre Dame College on May 26th and 27th.">
+<meta name="twitter:image" content="https://ndcobac.comimg/8th NAF-01-01.png">
+      
+    <link rel="shortcut icon" href="img/title_icon.ico"> <!-- * Favicon -->
+    <!-- ICONS -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/cursor.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/sponsor.css">
+    <link rel="stylesheet" href="styles/event.css">
+    <link rel="stylesheet" href="styles/details_events.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4EPM5KNSVD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4EPM5KNSVD');
+</script>
+</head>
+<body>
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Event Assistant</h3>
+            <div class="chatbot-close" id="close-chatbot">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatbot-messages">
+            <div class="chatbot-message chatbot-response">
+                <div class="message-content">
+                    <p>Hello! I'm your Event Assistant. How can I help you with your event today?</p>
+                </div>
+            </div>
+            <div class="chatbot-message chatbot-response">
+                <div class="message-content">
+                    <p>Please select one of the following questions:</p>
+                </div>
+            </div>
+            <div class="quick-questions">
+                <button class="quick-question-btn" data-question="event-types">What types of events do you organize?</button>
+                <button class="quick-question-btn" data-question="pricing">What are your pricing options?</button>
+                <button class="quick-question-btn" data-question="availability">How do I check date availability?</button>
+                <button class="quick-question-btn" data-question="catering">Do you provide catering services?</button>
+                <button class="quick-question-btn" data-question="contact">How can I contact your team?</button>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <button class="chatbot-toggle" id="toggle-chatbot">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <div class="cursor"></div>
+    
+    <header class="header">
+        <nav class="nav container" style="max-width: 100%;">
+            <div class="nav__data">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/obac-logo.png" alt="OBAC Logo">
+                </a>
+    
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+    
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="active-link">
+                        <a href="index.html" class="nav__link">HOME</a>
+                    </li>
+    
+                    <li>
+                        <a href="about.html" class="nav__link">ABOUT</a>
+                    </li>
+    
+                    
+    
+                    <!--=============== DROPDOWN: EVENTS ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <a>EVENTS</a>
+                            <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-list-check"></i>
+                                    </div>
+                                    <span class="dropdown__title">Event Types</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="solo.html" class="dropdown__link">SOLO</a></li>
+                                        <li><a href="team.html" class="dropdown__link">TEAM</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Solo Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="ObstacleGround.html" class="dropdown__link">Obstacle Ground</a></li>
+                                        <li><a href="CryptoGrid.html" class="dropdown__link">Crypto Grid</a></li>
+                                        <li><a href="PinPointonMap.html" class="dropdown__link">Pin Point on Map</a></li>
+                                        <li><a href="CodeNames.html" class="dropdown__link">Code Names</a></li>
+                                        <li><a href="Lensation.html" class="dropdown__link">Lensation</a></li>
+                                        <li><a href="HiddenObjectQuest.html" class="dropdown__link">Hidden Object Quest</a></li>
+                                        <li><a href="Pacman.html" class="dropdown__link">Pacman</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Team Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
+                                        <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="faq.html" class="nav__link">FAQ</a>
+                    </li>
+    
+                    <li>
+                        <a href="contact.html" class="nav__link">CONTACT US</a>
+                    </li>
+    
+                    <li>
+                        <a href="event.html" class="nav__link buy-ticket-btn" id="btn-nav-link">
+                            <i class="ri-ticket-2-line btn-icon"></i> BUY TICKETS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home-about">
+        <div id="info-txt">
+            <p>Welcome to our exciting range of events! Below you'll find all the competitions we're hosting, divided into Solo Events, Group Events, and Gaming Events. Each event offers unique challenges and opportunities to showcase your skills.</p>
+        </div>
+    </section>
+
+
+    <section id="event-page">
+
+        <div id="texture">
+            <div id="event-txt">
+                <h3>NOTRE DAME COLLEGE DHAKA ADVENTURE CLUB <span style="color: rgb(248, 171, 248);">SOLO PASS</span></h3> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut culpa eveniet cum laboriosam. Vero vel magnam rem harum officia deserunt enim error inventore dolore, culpa minus magni ut dolor!</p>
+            </div>
+            <div id="participate-button" onclick="audio.play()">
+                <a href="registration.html" class="animated-button">
+                  <i class="ri-user-add-fill"></i>
+                  Participate Now
+                </a>
+              </div>
+            
+        </div>
+
+        <div id="texture1">
+            <div id="event-txt1">
+                <div id="bord">
+                    <img src="ISTARC/Project.jpg">
+                </div><br>
+                <h2>Premium Heading - Lorem Ipsum</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex dicta quo, quis mollitia quaerat, libero minus dignissimos blanditiis ab tenetur tempora beatae sed excepturi reprehenderit neque consequuntur maiores omnis.</p>
+                <br>
+                <h5>Date : 0/0/2000</h5><br>
+                <h5>Type : Offline</h5><br>
+                <h5>Fee : Infinity</h5><br>
+                <h5>Location : Lorem ipsum, dolor srro ratione quos quaerat!</h5>
+
+
+            </div>
+            <div id="rules">
+                <a>Contest Rules:</a><br><br>
+                <h6>General Rules:</h6><br>
+                <h6>1.Participation is open to school and <br> college students.</h6>
+                <h6>2.Participants are required to arrive at<br> least 10 minutes before the designated time. </h6>
+                <h6>3.Individuals can take part in one or more Olympiad<br> events as per the schedule.</h6><br><br><br>
+
+
+                <a>What's included in the Solo Pass:</a><br><br>
+                <h6>IT Olympiad</h6>
+                <h6>Robotics Olympiad</h6>
+                <h6>Google It </h6>
+                <h6>Participants are required to bring all necessary electroni<br> equipment (laptops, mobile devices, multi-plugs, etc.).<br> The organizers will not provide these items.</h6>
+
+
+                <div id="event-part" style="margin: 10px 0;">
+                    <h4>Do you want to participate?</h4><br><br>
+
+                    <div id="participate-button" onclick="audio.play()">
+                        <a href="registration.html" class="animated-button">
+                          <i class="ri-user-add-fill"></i>
+                          Participate Now
+                        </a>
+                      </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsor">
+        <div id="cent-wrapper">
+            <div class="wrapper">
+                <div class="item item1">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item2">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item3">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item4">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item5">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item6">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="item item7">
+                    <h3>Lorem Ipsum</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="animated-footer">
+        <div class="footer-wave">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="wave-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="wave-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="wave-fill"></path>
+          </svg>
+        </div>
+      
+        <div class="footer-content">
+          <!-- Logo Column -->
+          <div class="footer-column logo-column">
+            <img src="img/obac-logo-footer.png" alt="NDC OBAC" class="logo-hover">
+            <div class="footer__logo__name">Notre Dame Outward Bound<br>Adventure Club</div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/ndcobac" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+                <span class="social-tooltip">Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/ndcobac.official/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+                <span class="social-tooltip">Instagram</span>
+              </a>
+              <a href="mailto:obac6thnaf@gmail.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+                <span class="social-tooltip">Email Us</span>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Contact Column -->
+          <div class="footer-column contact-column">
+            <h3 class="section-title">Contact Us <i class="fas fa-chevron-down"></i></h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <p>obac6thnaf@gmail.com</p>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p>Notre Dame College, Motijheel<br>Dhaka-1000, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Banner Column -->
+          <div class="footer-column banner-column">
+            <div class="banner-container">
+              <img src="img/naf-banner.png" alt="NAF Banner" class="banner-hover">
+              <div class="banner-overlay">
+                <span>6th NAF</span>
+                <p>Adventure Awaits</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <div class="container">
+            <p>© 2025 Notre Dame Outward Bound Adventure Club. All rights reserved.Created By <a href="https://www.facebook.com/sohorab.2O/">Sohorab Mahmud Fahim</a></p>
+            <div class="scroll-top">
+              <i class="fas fa-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+<script src="js/app.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+
+
+
+    <script>
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            const content = document.getElementById('content');
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        });
+    </script>
+    <script>
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+                nav.style.zIndex = '1000';
+            });
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+                nav.style.zIndex = 'initial';
+            });
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            offset: 300
+        })
+        AOS.init({
+            delay: 20
+        })
+    </script>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.audio = new Audio();
+            audio.src = './img/click.mp3';
+        });
+
+        function playAudio() {
+            if (window.audio) {
+                audio.play();
+            } else {
+                console.error('Audio element not found');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

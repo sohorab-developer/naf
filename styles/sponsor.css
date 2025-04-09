@@ -1,0 +1,118 @@
+#sponsor {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#cent-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    border: 1px solid rgb(34, 22, 73);
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    mask-image: linear-gradient( to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+}
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+.item {
+    left: max(calc(200px * 8), 100%);
+    width: 200px;
+    height: 100px;
+    background-color: rgba(156, 85, 161, 0.014);
+    border-radius: 6px;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item h3 {
+    font-size: 15px;
+}
+.item1 {
+    animation-delay: 0s;
+}
+.item2 {
+    animation-delay: 2s;
+}
+.item3 {
+    animation-delay: 4s;
+}
+.item4 {
+    animation-delay: 6s;
+}
+.item5 {
+    animation-delay: 8s;
+}
+.item6 {
+    animation-delay: 10s;
+}
+.item7 {
+    animation-delay: 12s;
+}
+.item8 {
+    animation-delay: 4s;
+}
+
+@media screen and (max-width:1200px){
+    .item {
+        left: max(calc(200px * 8), 100%);
+        width: 200px;
+        height: 100px;
+        background-color: rgba(156, 85, 161, 0.014);
+        border-radius: 6px;
+        position: absolute;
+        left: 100%;
+        animation-name: scrollLeft;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .item h3 {
+        font-size: 15px;
+    }
+    .item1 {
+        animation-delay: 0s;
+    }
+    .item2 {
+        animation-delay: 3s;
+    }
+    .item3 {
+        animation-delay: 6s;
+    }
+    .item4 {
+        animation-delay: 9s;
+    }
+    .item5 {
+        animation-delay: 12s;
+    }
+    .item6 {
+        animation-delay: 15s;
+    }
+    .item7 {
+        animation-delay: 18s;
+    }
+    .item8 {
+        animation-delay: 21s;
+    }
+}

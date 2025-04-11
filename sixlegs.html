@@ -108,11 +108,12 @@
                                     <span class="dropdown__title">Solo Events</span>
                                     <ul class="dropdown__list">
                                         <li><a href="ObstacleGround.html" class="dropdown__link">Obstacle Ground</a></li>
-                                        <li><a href="CryptoGrid.html" class="dropdown__link">Crypto Grid</a></li>
-                                        <li><a href="PinPointonMap.html" class="dropdown__link">Pin Point on Map</a></li>
-                                        <li><a href="CodeNames.html" class="dropdown__link">Code Names</a></li>
-                                        <li><a href="Lensation.html" class="dropdown__link">Lensation</a></li>
+                                        <li><a href="CryptoGrid.html" class="dropdown__link">Crypto Grid</a></li>                             
                                         <li><a href="HiddenObjectQuest.html" class="dropdown__link">Hidden Object Quest</a></li>
+                                        <li><a href="PinPointonMap.html" class="dropdown__link">Pin Point on Map</a></li>
+                                        <li><a href="CodeNames.html" class="dropdown__link">Code Names</a></li><br>
+                                        <li><a href="Lensation.html" class="dropdown__link">Lensation</a></li><br>
+  
                                         <li><a href="Pacman.html" class="dropdown__link">Pacman</a></li>
                                     </ul>
                                 </div>
@@ -399,6 +400,7 @@
 
 
     
+ 
     <footer class="animated-footer">
         <div class="footer-wave">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -461,13 +463,45 @@
         </div>
       
         <div class="footer-bottom">
-          <div class="container">
-            <p>© 2025 Notre Dame Outward Bound Adventure Club. All rights reserved.Created By <a href="https://www.facebook.com/sohorab.2O/">Sohorab Mahmud Fahim</a></p>
-            <div class="scroll-top">
-              <i class="fas fa-arrow-up"></i>
+            <div class="container">
+              <div class="footer-contents">
+                <div class="footer-copyright">
+                  <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="currentColor" d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2zm0 2.8L18 10v9h-2v-6H8v6H6v-9l6-7.2z"/>
+                    </svg>
+                    <span>Notre Dame Outward Bound Adventure Club</span>
+                  </div>
+                  <p>© 2025 All rights reserved. Created <i class="fas fa-heart pulse"></i> by <a href="https://www.facebook.com/sohorab.2O/" class="creator-link">
+                    <i class="fas fa-user-tie"></i> Sohorab Mahmud Fahim
+                  </a></p>
+                </div>
+                
+                <div class="footer-actions">
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          
+          
+          <script>
+          document.querySelector('.scroll-top').addEventListener('click', () => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+          </script>
       </footer>
 
 

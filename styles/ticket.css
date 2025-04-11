@@ -488,6 +488,10 @@
     opacity: 0;
     transition: all 0.5s ease;
   }
+
+  .banner-column{
+    display: flex;
+  }
   
   .banner-container:hover .banner-overlay {
     transform: translateY(0);
@@ -683,6 +687,9 @@
     .footer-actions {
       margin-top: 20px;
     }
+    .banner-container {
+    width:400px ;    }
+    
   }
 
 

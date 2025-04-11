@@ -11,12 +11,10 @@
 /* ---------------------------------MAIN(HERO)-------------------------------- */
 .main-container {
   min-height: 100vh;
-  background: var(--dark-blue);
   background-image: url("img/webpage\ bg-01.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: 100%;
-  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -129,7 +127,7 @@
   font-size: 0.8rem;
 }
 .hero-blue {
-  color: #FD9C3B !important;
+  color: #e28aff !important;
 }
 
 .arrowDown img {
@@ -538,7 +536,7 @@ input[type=submit]:hover {
 @media (max-width: 768px) {
   .container {
       width: 90%;
-      margin: 50px 20px;
+      margin: 0px 10px;
   }
 }
 @media (max-width: 480px) {

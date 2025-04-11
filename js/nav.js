@@ -61,20 +61,3 @@ const removeStyle = () => {
 mediaQuery.addEventListener('change', removeStyle);
 window.addEventListener('resize', removeStyle);
 
-
-
-
-/*=============== SCROLLING STYLES ===============*/
-
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-
-    if (window.scrollY > 50) {
-        header.style.backgroundColor = 'rgb(0 0 0 / 43%)';
-        header.style.backdropFilter = 'blur(5px)';
-    } else {
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-        header.style.backdropFilter = 'blur(0px)';
-    }
-
-});

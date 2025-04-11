@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="Notre Dame Outward Bound Adventure Club is back with the 6th season of the National Adventure Festival taking place at the premises of Notre Dame College on May 26th and 27th.">
 <meta name="twitter:image" content="https://ndcobac.comimg/8th NAF-01-01.png">
       
-    <link rel="shortcut icon" href="img/title_icon.ico"> <!-- * Favicon -->
+    <link rel="shortcut icon" href="img/naf-banner.png"> <!-- * Favicon -->
     <!-- ICONS -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -50,7 +50,6 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/sponsor.css">
     <link rel="stylesheet" href="styles/event.css">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EPM5KNSVD"></script>
 <script>
@@ -62,57 +61,10 @@
 </script>
 </head>
 <body>
-
-    <style>
-
-#eventpart{
-    background-color: rgba(125, 0, 150, 0.158);
-}
-    
-#eventpart li {
-    list-style: none;
-    color: rgb(251, 150, 255);
-}
-    </style>
-
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Event Assistant</h3>
-            <div class="chatbot-close" id="close-chatbot">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatbot-messages">
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Hello! I'm your Event Assistant. How can I help you with your event today?</p>
-                </div>
-            </div>
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Please select one of the following questions:</p>
-                </div>
-            </div>
-            <div class="quick-questions">
-                <button class="quick-question-btn" data-question="event-types">What types of events do you organize?</button>
-                <button class="quick-question-btn" data-question="pricing">What are your pricing options?</button>
-                <button class="quick-question-btn" data-question="availability">How do I check date availability?</button>
-                <button class="quick-question-btn" data-question="catering">Do you provide catering services?</button>
-                <button class="quick-question-btn" data-question="contact">How can I contact your team?</button>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
-    <button class="chatbot-toggle" id="toggle-chatbot">
-        <i class="fas fa-comment-dots"></i>
-    </button>
-
-    <div class="cursor"></div>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
     <header class="header">
         <nav class="nav container" style="max-width: 100%;">
             <div class="nav__data">
@@ -181,7 +133,31 @@
                                     <span class="dropdown__title">Team Events</span>
                                     <ul class="dropdown__list">
                                         <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
+                                        <li><a href="tictactoe.html" class="dropdown__link">Tic Tac Toe</a></li>
+                                        <li><a href="wallmagazine.html" class="dropdown__link">Wall Magazine</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Limited Slot Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="futsal.html" class="dropdown__link">Futsal</a></li>
                                         <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
+                                        <li><a href="sixlegs.html" class="dropdown__link">Six Legs</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Signature Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#" class="dropdown__link">Coming Soon</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -189,7 +165,7 @@
                     </li>
 
                     <li>
-                        <a href="faq.html" class="nav__link">FAQ</a>
+                        <a href="partners.html" class="nav__link">PARTNERS</a>
                     </li>
     
                     <li>
@@ -206,133 +182,567 @@
         </nav>
     </header>
 
+        <section id="home-about">
+            <div id="info-txt">
+                <p>Welcome to our exciting range of events! Below you'll find all the competitions we're hosting, divided into Solo Events, Group Events, and Gaming Events. Each event offers unique challenges and opportunities to showcase your skills.</p>
+            </div>
+        </section>
 
 
+        <main>
+     <!-- Solo Events -->
 
-    <section id="home-about">
-        <div id="info-txt">
-            <p>Welcome to our exciting range of events! Below you'll find all the competitions we're hosting, divided into Solo Events, Group Events, and Gaming Events. Each event offers unique challenges and opportunities to showcase your skills.</p>
+
+     <!-- <section class="section">
+        <h2 class="section-title">Solo Events</h2>
+        <div class="events-grid">
+           
+             <div class="grid-group">
+            <div class="event-card crypto">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Crypto Grid</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/s8ajisMVq4KqSm1b8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+           
+            <div class="grid-group">
+            <div class="event-card code">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Code Names</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/s8ajisMVq4KqSm1b8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+    
+            <div class="grid-group">
+            <div class="event-card object">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Hidden Object Quest</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/s8ajisMVq4KqSm1b8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+
+            <div class="grid-group">
+            <div class="event-card map">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Pin Point on Map</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/s8ajisMVq4KqSm1b8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+
+            <div class="grid-group">
+            <div class="event-card obstacle">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Obstacle Ground</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/s8ajisMVq4KqSm1b8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+
+            <div class="grid-group">
+            <div class="event-card lensation">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Lensation</h3>
+                        <p class="event-type">Offline Event</p>
+                    </div>
+                    <a href="https://forms.gle/eFYP2Q3AEoAbgQUn6" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+
+            <div class="grid-group">
+                <div class="event-card Pacman" style="
+                    position: relative;
+                    height: 300px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                    filter: grayscale(60%);
+                    opacity: 0.8;
+                    animation: float 6s ease-in-out infinite;
+                ">
+                    <div class="event-bg" style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 1;
+                        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('styles/eventsimg/p.png');
+                    "></div>
+                    
+                    <div class="event-content" style="
+                        position: relative;
+                        z-index: 2;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px;
+                        color: white;
+                    ">
+                        <div>
+                            <h3 class="event-title" style="font-size: 1.5rem; margin-bottom: 5px;">Pacman</h3>
+                            <p class="event-type" style="font-size: 0.9rem; opacity: 0.8;">Offline Event</p>
+                            
+                            <div style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: rgba(0,0,0,0.7);
+                            ">
+                                <span style="
+                                    background: linear-gradient(135deg, #ff8a00, #e52e71);
+                                    color: white;
+                                    padding: 8px 20px;
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                    transform: rotate(-5deg);
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                                ">Available Soon</span>
+                            </div>
+                        </div>
+                        
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            padding: 10px 20px;
+                            background: #555;
+                            color: white;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            font-weight: 500;
+                            width: fit-content;
+                            opacity: 0.7;
+                            cursor: not-allowed;
+                        ">
+                            Registration Closed <i class="ri-time-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
-    </section>
+    </section> -->
     
-    <!-- Solo Events -->
-    <section id="head">
-        <h2>Solo Events</h2>
-    </section>
-    <section id="eventbar">
-        <div id="eventtype">
-            <!-- Crypto Grid -->
-            <div id="eventpart">
-                <h3>Crypto Grid</h3>
-                <p>Crypto Grid is a conceptual mind game divided into two parts. Participants will engage in a unique puzzle that requires filling in words with appropriate letters, each assigned a specific value. Your task is to decipher and use these values to complete a series of mathematical terms.</p>
-                <ul>
-                    <li>Junior Division: Class 6-8</li>
-                    <li>Senior Division: Class 9-12</li>
-                    <li><a href="crypto-grid.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Code Names -->
-            <div id="eventpart">
-                <h3>Code Names</h3>
-                <p>In this game, players must use their wit and imagination to connect words and uncover the identities of fellow players. It's a perfect blend of adrenaline, intelligence, and fun that will keep everyone engaged.</p>
-                <ul>
-                    <li>Junior Division: Class 6-8</li>
-                    <li>Senior Division: Class 9-12</li>
-                    <li><a href="code-names.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Pin Point on Map -->
-            <div id="eventpart">
-                <h3>Pin Point on Map</h3>
-                <p>The world is vast and full of incredible places waiting to be explored. How well do you know the geography of our planet? Can you pinpoint famous landmarks, cities, and natural wonders on a map?</p>
-                <ul>
-                    <li>Junior Division: Class 6-8</li>
-                    <li>Senior Division: Class 9-12</li>
-                    <li><a href="pin-point-map.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Obstacle Ground -->
-            <div id="eventpart">
-                <h3>Obstacle Ground</h3>
-                <p>Obstacle Ground challenges participants to push their physical and mental boundaries by navigating through a meticulously designed course. Participants must demonstrate both physical prowess and mental resilience.</p>
-                <ul>
-                    <li>Junior Division: Class 6-8</li>
-                    <li>Senior Division: Class 9-12</li>
-                    <li><a href="obstacle-ground.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Lensation -->
-            <div id="eventpart">
-                <h3>Lensation</h3>
-                <p>Photography is a transcendent art form that allows you to capture your innermost self through still moments. With countless styles of photography, each one reveals different facets of the intricate reality we inhabit.</p>
-                <ul>
-                    <li>Digital Camera Photography</li>
-                    <li>Mobile Photography</li>
-                    <li>Senior (Class 11-12, including HSC Batch-25)</li>
-                    <li><a href="lensation.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Hidden Object Quest -->
-            <div id="eventpart">
-                <h3>Hidden Object Quest</h3>
-                <p>Hidden Object is an indoor detective challenge that requires participants to identify concealed items within complex visual puzzles. Each image is carefully crafted to test your observational skills and mental agility.</p>
-                <ul>
-                    <li>Junior Division: Class 6-8</li>
-                    <li>Senior Division: Class 9-12</li>
-                    <li><a href="hidden-object.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Pacman -->
-            <div id="eventpart">
-                <h3>Pacman</h3>
-                <p>This event invites participants to navigate through a maze filled with treasures and challenges reminiscent of the beloved arcade game that has captivated audiences worldwide for decades.</p>
-                <ul>
-                    <li>Junior: Classes 6-8</li>
-                    <li>Senior: Classes 9-12</li>
-                    <li><a href="pacman.html">Learn more</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Group Events -->
-    <section id="head">
-        <h2>Group Events</h2>
-    </section>
-    <section id="eventbar">
-        <div id="eventtype">
+<section class="section">
+        <h2 class="section-title">Solo Events</h2>
+        <div class="events-grid">
             <!-- Bingo -->
-            <div id="eventpart">
-                <h3>Bingo</h3>
-                <p>Teams will race against the clock to find specific items listed on their templates, capturing photographic evidence of their discoveries. The excitement culminates in the triumphant shout of "BINGO!" as teams uncover the treasures hidden in plain sight.</p>
-                <ul>
-                    <li>Eligible Category: Combined (Junior + Senior)</li>
-                    <li>Event Type: Trio (Team of Three)</li>
-                    <li><a href="bingo.html">Learn more</a></li>
-                </ul>
-            </div>
-    
-            <!-- Outrush -->
-            <div id="eventpart">
-                <h3>Outrush</h3>
-                <p>OUTRUSH is a dynamic team challenge where two teams of three players each compete to launch footballs into the opposing team's designated area. With a larger playing field and the thrill of footballs flying through the air, this game promises to be an action-packed experience.</p>
-                <ul>
-                    <li>Event Type: Team of Four</li>
-                    <li><a href="outrush.html">Learn more</a></li>
-                </ul>
-            </div>
+            <div class="grid-group">
+            <div class="event-card solopass">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Solo Pass</h3>
+                        <p class="event-type">Solo Event</p>
+                        <li>Crypto Grid</li>
+                        <li>Code Names</li>
+                        <li>Hidden Object Quest</li>
+                        <li>Pin Point on Map</li>
+                        <li>Obstacle Ground</li>
+                    </div>
+                    <a href="https://forms.gle/8nSbf5D2QSkuaEjS8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+            <!-- Tic Tac Toe -->
+            <div class="grid-group">
+            <div class="event-card lensation">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Lensation</h3>
+                        <p class="event-type">Solo Event</p>
+                    </div>
+                    <a href="https://forms.gle/eFYP2Q3AEoAbgQUn6" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+            <!-- Wall Magazine -->
+            <div class="grid-group">
+            <div class="event-card pacman">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Pacman</h3>
+                        <p class="event-type">Solo Event</p>
+                    </div>
+                    <a href="https://forms.gle/dnQvYPRmFUzkgjPv6" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
         </div>
     </section>
 
 
+    <!-- Team Events -->
+    <section class="section">
+        <h2 class="section-title">Team Events</h2>
+        <div class="events-grid">
+            <!-- Bingo -->
+            <div class="grid-group">
+            <div class="event-card bingo">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Bingo</h3>
+                        <p class="event-type">Trio (Team of Three)</p>
+                    </div>
+                    <a href="https://forms.gle/8nSbf5D2QSkuaEjS8" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+            <!-- Tic Tac Toe -->
+            <div class="grid-group">
+            <div class="event-card tictactoe">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Tic Tac Toe</h3>
+                        <p class="event-type">Team Event</p>
+                    </div>
+                    <a href="https://forms.gle/jHE8h9uxQAankh91A" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+            
+            <!-- Wall Magazine -->
+            <div class="grid-group">
+            <div class="event-card wallmag">
+                <div class="event-bg"></div>
+                <div class="event-content">
+                    <div>
+                        <h3 class="event-title">Wall Magazine</h3>
+                        <p class="event-type">Team Event</p>
+                    </div>
+                    <a href="https://forms.gle/AnNcJcHsFjXH76LeA" target="_blank" class="event-btn">Buy Ticket <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div></div>
+        </div>
+    </section>
+    
+    <!-- Slot Limited Events -->
+    <section class="section">
+        <h2 class="section-title">Slot Limited Events <span style="
+            background: linear-gradient(135deg, #c300ff, #e52e71);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-left: 15px;
+            vertical-align: middle;
+            animation: pulse 2s infinite;
+            display: inline-block;
+        ">Coming Soon</span></h2>
+        
+        <div class="events-grid">
+            <!-- Outrush -->
+            <div class="grid-group">
+                <div class="event-card outrush" style="
+                    position: relative;
+                    height: 300px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                    filter: grayscale(60%);
+                    opacity: 0.8;
+                ">
+                    <div class="event-bg" style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 1;
+                        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('styles/eventsimg/o.png');
+                    "></div>
+                    
+                    <div class="event-content" style="
+                        position: relative;
+                        z-index: 2;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px;
+                        color: white;
+                    ">
+                        <div>
+                            <h3 class="event-title" style="font-size: 1.5rem; margin-bottom: 5px;">Outrush</h3>
+                            <p class="event-type" style="font-size: 0.9rem; opacity: 0.8;">Team of Four</p>
+                            
+                            <div style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: rgba(0,0,0,0.7);
+                            ">
+                                <span style="
+                                    background: linear-gradient(135deg, #ff8a00, #e52e71);
+                                    color: white;
+                                    padding: 8px 20px;
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                    transform: rotate(-5deg);
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                                ">Available Soon</span>
+                            </div>
+                        </div>
+                        
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            padding: 10px 20px;
+                            background: #555;
+                            color: white;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            font-weight: 500;
+                            width: fit-content;
+                            opacity: 0.7;
+                            cursor: not-allowed;
+                        ">
+                            Registration Closed <i class="ri-time-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Futsal -->
+            <div class="grid-group">
+                <div class="event-card futsal" style="
+                    position: relative;
+                    height: 300px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                    filter: grayscale(60%);
+                    opacity: 0.8;
+                ">
+                    <div class="event-bg" style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 1;
+                        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('styles/eventsimg/fsal.png');
+                    "></div>
+                    
+                    <div class="event-content" style="
+                        position: relative;
+                        z-index: 2;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px;
+                        color: white;
+                    ">
+                        <div>
+                            <h3 class="event-title" style="font-size: 1.5rem; margin-bottom: 5px;">Futsal</h3>
+                            <p class="event-type" style="font-size: 0.9rem; opacity: 0.8;">Sports Event</p>
+                            
+                            <div style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: rgba(0,0,0,0.7);
+                            ">
+                                <span style="
+                                    background: linear-gradient(135deg, #ff8a00, #e52e71);
+                                    color: white;
+                                    padding: 8px 20px;
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                    transform: rotate(-5deg);
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                                ">Available Soon</span>
+                            </div>
+                        </div>
+                        
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            padding: 10px 20px;
+                            background: #555;
+                            color: white;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            font-weight: 500;
+                            width: fit-content;
+                            opacity: 0.7;
+                            cursor: not-allowed;
+                        ">
+                            Registration Closed <i class="ri-time-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Six Legs -->
+            <div class="grid-group">
+                <div class="event-card sizlegs" style="
+                    position: relative;
+                    height: 300px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                    filter: grayscale(60%);
+                    opacity: 0.8;
+                ">
+                    <div class="event-bg" style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center;
+                        z-index: 1;
+                        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('styles/eventsimg/6L.png');
+                    "></div>
+                    
+                    <div class="event-content" style="
+                        position: relative;
+                        z-index: 2;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px;
+                        color: white;
+                    ">
+                        <div>
+                            <h3 class="event-title" style="font-size: 1.5rem; margin-bottom: 5px;">Six Legs</h3>
+                            <p class="event-type" style="font-size: 0.9rem; opacity: 0.8;">Team Event</p>
+                            
+                            <div style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: rgba(0,0,0,0.7);
+                            ">
+                                <span style="
+                                    background: linear-gradient(135deg, #ff8a00, #e52e71);
+                                    color: white;
+                                    padding: 8px 20px;
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                    transform: rotate(-5deg);
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                                ">Available Soon</span>
+                            </div>
+                        </div>
+                        
+                        <div style="
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+                            padding: 10px 20px;
+                            background: #555;
+                            color: white;
+                            border-radius: 8px;
+                            text-decoration: none;
+                            font-weight: 500;
+                            width: fit-content;
+                            opacity: 0.7;
+                            cursor: not-allowed;
+                        ">
+                            Registration Closed <i class="ri-time-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Slot Limited Events -->
+   <section class="section">
+    <h2 class="section-title">Signature Events <span style="
+        background: linear-gradient(135deg, #c300ff, #e52e71);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-left: 15px;
+        vertical-align: middle;
+        animation: pulse 2s infinite;
+        display: inline-block;
+    ">Coming Soon</span></h2>
+
+</section>
 
 
+
+
+
+    
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</main>
+
+<div class="cursor"></div>
     <section id="sponsor">
         <div id="cent-wrapper">
             <div class="wrapper">

@@ -63,136 +63,271 @@
 </head>
 <body>
 
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Event Assistant</h3>
-            <div class="chatbot-close" id="close-chatbot">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatbot-messages">
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Hello! I'm your Event Assistant. How can I help you with your event today?</p>
-                </div>
-            </div>
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Please select one of the following questions:</p>
-                </div>
-            </div>
-            <div class="quick-questions">
-                <button class="quick-question-btn" data-question="event-types">What types of events do you organize?</button>
-                <button class="quick-question-btn" data-question="pricing">What are your pricing options?</button>
-                <button class="quick-question-btn" data-question="availability">How do I check date availability?</button>
-                <button class="quick-question-btn" data-question="catering">Do you provide catering services?</button>
-                <button class="quick-question-btn" data-question="contact">How can I contact your team?</button>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
+    <style>
+#head {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f9f8fa13;
+  margin-bottom: 20px;
+}
 
-    <button class="chatbot-toggle" id="toggle-chatbot">
-        <i class="fas fa-comment-dots"></i>
-    </button>
+#head h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+#eventbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#eventpart {
+  background-color: rgba(116, 2, 126, 0.103);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+#eventpart h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#eventpart p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+#center {
+  padding: 30px 0;
+  background-color: #53006815;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#buttons a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #e180ff;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10pxpx;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#buttons a:hover {
+  background-color: #f700ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  #center {
+    padding: 20px 0;
+  }
+  
+  #buttons a {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #buttons a {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #head h2 {
+    font-size: 2.2rem;
+  }
+  
+  #eventpart h3 {
+    font-size: 1.6rem;
+  }
+  
+  #eventpart p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #head {
+    padding: 15px 0;
+  }
+  
+  #head h2 {
+    font-size: 2rem;
+  }
+  
+  #eventbar {
+    padding: 0 15px;
+  }
+  
+  #eventpart {
+    padding: 20px;
+  }
+  
+  #eventpart h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #head h2 {
+    font-size: 1.8rem;
+  }
+  
+  #eventpart {
+    padding: 15px;
+  }
+  
+  #eventpart h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  #eventpart p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+    </style>
 
     <div class="cursor"></div>
 
     <header class="header">
-        <nav class="nav container" style="max-width: 100%;">
-            <div class="nav__data">
-                <a href="index.html" class="nav__logo">
-                    <img src="img/obac-logo.png" alt="OBAC Logo">
-                </a>
-    
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line nav__toggle-menu"></i>
-                    <i class="ri-close-line nav__toggle-close"></i>
-                </div>
-            </div>
-    
-            <!--=============== NAV MENU ===============-->
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="active-link">
-                        <a href="index.html" class="nav__link">HOME</a>
-                    </li>
-    
-                    <li>
-                        <a href="about.html" class="nav__link">ABOUT</a>
-                    </li>
-    
-                    
-    
-                    <!--=============== DROPDOWN: EVENTS ===============-->
-                    <li class="dropdown__item">
-                        <div class="nav__link dropdown__button">
-                            <a>EVENTS</a>
-                            <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-list-check"></i>
-                                    </div>
-                                    <span class="dropdown__title">Event Types</span>
-                                    <ul class="dropdown__list">
-                                        <li><a href="solo.html" class="dropdown__link">SOLO</a></li>
-                                        <li><a href="team.html" class="dropdown__link">TEAM</a></li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-user-line"></i>
-                                    </div>
-                                    <span class="dropdown__title">Solo Events</span>
-                                    <ul class="dropdown__list">
-                                        <li><a href="ObstacleGround.html" class="dropdown__link">Obstacle Ground</a></li>
-                                        <li><a href="CryptoGrid.html" class="dropdown__link">Crypto Grid</a></li>
-                                        <li><a href="PinPointonMap.html" class="dropdown__link">Pin Point on Map</a></li>
-                                        <li><a href="CodeNames.html" class="dropdown__link">Code Names</a></li>
-                                        <li><a href="Lensation.html" class="dropdown__link">Lensation</a></li>
-                                        <li><a href="HiddenObjectQuest.html" class="dropdown__link">Hidden Object Quest</a></li>
-                                        <li><a href="Pacman.html" class="dropdown__link">Pacman</a></li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-team-line"></i>
-                                    </div>
-                                    <span class="dropdown__title">Team Events</span>
-                                    <ul class="dropdown__list">
-                                        <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
-                                        <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+      <nav class="nav container" style="max-width: 100%;">
+          <div class="nav__data">
+              <a href="index.html" class="nav__logo">
+                  <img src="img/obac-logo.png" alt="OBAC Logo">
+              </a>
+  
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__toggle-menu"></i>
+                  <i class="ri-close-line nav__toggle-close"></i>
+              </div>
+          </div>
+  
+          <!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="active-link">
+                      <a href="index.html" class="nav__link">HOME</a>
+                  </li>
+  
+                  <li>
+                      <a href="about.html" class="nav__link">ABOUT</a>
+                  </li>
+  
+                  
+  
+                  <!--=============== DROPDOWN: EVENTS ===============-->
+                  <li class="dropdown__item">
+                      <div class="nav__link dropdown__button">
+                          <a>EVENTS</a>
+                          <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                      </div>
+                      <div class="dropdown__container">
+                          <div class="dropdown__content">
+                              <div class="dropdown__group">
+                                  <div class="dropdown__icon">
+                                      <i class="ri-list-check"></i>
+                                  </div>
+                                  <span class="dropdown__title">Event Types</span>
+                                  <ul class="dropdown__list">
+                                      <li><a href="solo.html" class="dropdown__link">SOLO</a></li>
+                                      <li><a href="team.html" class="dropdown__link">TEAM</a></li>
+                                  </ul>
+                              </div>
+                              
+                              <div class="dropdown__group">
+                                  <div class="dropdown__icon">
+                                      <i class="ri-user-line"></i>
+                                  </div>
+                                  <span class="dropdown__title">Solo Events</span>
+                                  <ul class="dropdown__list">
+                                      <li><a href="ObstacleGround.html" class="dropdown__link">Obstacle Ground</a></li>
+                                      <li><a href="CryptoGrid.html" class="dropdown__link">Crypto Grid</a></li>
+                                      <li><a href="PinPointonMap.html" class="dropdown__link">Pin Point on Map</a></li>
+                                      <li><a href="CodeNames.html" class="dropdown__link">Code Names</a></li>
+                                      <li><a href="Lensation.html" class="dropdown__link">Lensation</a></li>
+                                      <li><a href="HiddenObjectQuest.html" class="dropdown__link">Hidden Object Quest</a></li>
+                                      <li><a href="Pacman.html" class="dropdown__link">Pacman</a></li>
+                                  </ul>
+                              </div>
+                              
+                              <div class="dropdown__group">
+                                  <div class="dropdown__icon">
+                                      <i class="ri-team-line"></i>
+                                  </div>
+                                  <span class="dropdown__title">Team Events</span>
+                                  <ul class="dropdown__list">
+                                      <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
+                                      <li><a href="tictactoe.html" class="dropdown__link">Tic Tac Toe</a></li>
+                                      <li><a href="wallmagazine.html" class="dropdown__link">Wall Magazine</a></li>
+                                  </ul>
+                              </div>
 
-                    <li>
-                        <a href="faq.html" class="nav__link">FAQ</a>
-                    </li>
-    
-                    <li>
-                        <a href="contact.html" class="nav__link">CONTACT US</a>
-                    </li>
-    
-                    <li>
-                        <a href="event.html" class="nav__link buy-ticket-btn" id="btn-nav-link">
-                            <i class="ri-ticket-2-line btn-icon"></i> BUY TICKETS
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                              <div class="dropdown__group">
+                                  <div class="dropdown__icon">
+                                      <i class="ri-team-line"></i>
+                                  </div>
+                                  <span class="dropdown__title">Limited Slot Events</span>
+                                  <ul class="dropdown__list">
+                                      <li><a href="futsal.html" class="dropdown__link">Futsal</a></li>
+                                      <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
+                                      <li><a href="sixlegs.html" class="dropdown__link">Six Legs</a></li>
+                                  </ul>
+                              </div>
+
+                              <div class="dropdown__group">
+                                  <div class="dropdown__icon">
+                                      <i class="ri-team-line"></i>
+                                  </div>
+                                  <span class="dropdown__title">Signature Events</span>
+                                  <ul class="dropdown__list">
+                                      <li><a href="#" class="dropdown__link">Coming Soon</a></li>
+                                      
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+
+                  <li>
+                      <a href="partners.html" class="nav__link">PARTNERS</a>
+                  </li>
+  
+                  <li>
+                      <a href="contact.html" class="nav__link">CONTACT US</a>
+                  </li>
+  
+                  <li>
+                      <a href="event.html" class="nav__link buy-ticket-btn" id="btn-nav-link">
+                          <i class="ri-ticket-2-line btn-icon"></i> BUY TICKETS
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
 
     <!-- home section -->
     <section id="home-about">
@@ -230,10 +365,9 @@
     </section>
     
 
-    <!-- Buttons Section -->
     <div id="center" style="display: flex; justify-content: center; align-items: center;">
         <section id="buttons" style="width:90%; ">
-            <a href="">Explore More</a></div>
+            <a href="https://www.facebook.com/ndcobac" action="_blank">Explore More</a></div>
     </section>
 
 
@@ -310,7 +444,7 @@
                 <div class="contact-icon">
                   <i class="fas fa-envelope"></i>
                 </div>
-                <p>obac6thnaf@gmail.com</p>
+                <p>obac8thnaf@gmail.com</p>
               </div>
               <div class="contact-item">
                 <div class="contact-icon">
@@ -326,7 +460,7 @@
             <div class="banner-container">
               <img src="img/naf-banner.png" alt="NAF Banner" class="banner-hover">
               <div class="banner-overlay">
-                <span>6th NAF</span>
+                <span>8th NAF</span>
                 <p>Adventure Awaits</p>
               </div>
             </div>

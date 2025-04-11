@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.178);
     padding: 5px;
 }
 #bord img {
@@ -154,4 +154,87 @@
     font-weight: 300;
     line-height: 30px;
     animation: fadeIn 2s ease-in-out;
+}
+
+#participate-button {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.animated-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #2d0981, #950ee4);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button i {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #9005c7, #2d059b);
+}
+
+.animated-button:hover i {
+    transform: scale(1.1);
+}
+
+.animated-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.animated-button:hover::before {
+    left: 100%;
+}
+
+@media (max-width: 968px) {
+    .animated-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+        
+    }
+    #texture1 {
+        display: flex
+    ;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 0 20px 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+    
+    .animated-button i {
+        font-size: 1rem;
+    }
 }

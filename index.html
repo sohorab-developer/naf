@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="Notre Dame Outward Bound Adventure Club is back with the 6th season of the National Adventure Festival taking place at the premises of Notre Dame College on May 26th and 27th.">
 <meta name="twitter:image" content="https://ndcobac.comimg/8th NAF-01-01.png">
       
-    <link rel="shortcut icon" href="img/title_icon.ico"> <!-- * Favicon -->
+    <link rel="shortcut icon" href="img/naf-banner.png"> <!-- * Favicon -->
     <!-- ICONS -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -62,42 +62,6 @@
 </script>
 </head>
 <body>
-
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Event Assistant</h3>
-            <div class="chatbot-close" id="close-chatbot">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatbot-messages">
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Hello! I'm your Event Assistant. How can I help you with your event today?</p>
-                </div>
-            </div>
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Please select one of the following questions:</p>
-                </div>
-            </div>
-            <div class="quick-questions">
-                <button class="quick-question-btn" data-question="event-types">What types of events do you organize?</button>
-                <button class="quick-question-btn" data-question="pricing">What are your pricing options?</button>
-                <button class="quick-question-btn" data-question="availability">How do I check date availability?</button>
-                <button class="quick-question-btn" data-question="catering">Do you provide catering services?</button>
-                <button class="quick-question-btn" data-question="contact">How can I contact your team?</button>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
-    <button class="chatbot-toggle" id="toggle-chatbot">
-        <i class="fas fa-comment-dots"></i>
-    </button>
 
     <div class="cursor"></div>
 
@@ -169,7 +133,31 @@
                                     <span class="dropdown__title">Team Events</span>
                                     <ul class="dropdown__list">
                                         <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
+                                        <li><a href="tictactoe.html" class="dropdown__link">Tic Tac Toe</a></li>
+                                        <li><a href="wallmagazine.html" class="dropdown__link">Wall Magazine</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Limited Slot Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="futsal.html" class="dropdown__link">Futsal</a></li>
                                         <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
+                                        <li><a href="sixlegs.html" class="dropdown__link">Six Legs</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Signature Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#" class="dropdown__link">Coming Soon</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -177,7 +165,7 @@
                     </li>
 
                     <li>
-                        <a href="faq.html" class="nav__link">FAQ</a>
+                        <a href="partners.html" class="nav__link">PARTNERS</a>
                     </li>
     
                     <li>
@@ -206,7 +194,7 @@
                     <span class="hero-blue">VENUE: </span>  NOTRE DAME COLLEGE, DHAKA
                 </div>
                 <div class="main__info__date">
-                    <span class="hero-blue">DATE: </span> 26-27 May
+                    <span class="hero-blue">DATE: </span> 16-17 May
                 </div>
                 <div class="main__info__hostedBy">
                     <p class="hero-blue">HOSTED BY:</p>
@@ -214,7 +202,7 @@
                     ADVENTURE CLUB</p>
                 </div>
                 <a href="#buytickets" class="nav__link buy-ticket-btn" id="btn-nav-link">
-                    <i class="ri-ticket-2-line btn-icon"></i> BUY TICKET
+                    <i class="fa-solid fa-ticket"></i> BUY TICKET
                 </a>
                 
             </section>
@@ -475,87 +463,13 @@
         </section>
     </div> -->
 
-
-    <section id="head">
-        <h2>Our Events</h2>
-    </section>
-    
-    <section id="eventbar">
-        <div id="eventtype">
-    
-            <div id="eventpart">
-                <h3>Crypto Grid (Solo)</h3>
-                <p>Crypto Grid is a conceptual mind game divided into two parts. Participants will solve a unique puzzle involving word construction using values assigned to each letter. The goal is to decipher these values and complete mathematical terms.</p>
-                <ul><li><a href="CryptoGrid.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Code Names (Solo)</h3>
-                <p>Use wit and imagination to connect words and uncover identities in a game full of excitement, friendly competition, and surprise twists!</p>
-                <ul><li><a href="CodeNames.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Pin Point on Map (Solo)</h3>
-                <p>Test your geographical knowledge by pinpointing landmarks, cities, and natural wonders on a map. A true challenge for explorers at heart!</p>
-                <ul><li><a href="PinPointonMap.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Obstacle Ground (Solo)</h3>
-                <p>A physically and mentally demanding course where participants must overcome unexpected challenges, proving their agility, strength, and quick thinking.</p>
-                <ul><li><a href="ObstacleGround.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Lensation (Solo)</h3>
-                <p>A photography event for those who capture stories through lenses. Submit your best digital or mobile photography and showcase your creativity!</p>
-                <ul><li><a href="Lensation.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Hidden Object Quest (Solo)</h3>
-                <p>A visual puzzle challenge where participants must locate concealed objects in intricate images. Perfect for those with a keen eye and sharp mind.</p>
-                <ul><li><a href="HiddenObjectQuest.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Pacman (Solo)</h3>
-                <p>Inspired by the classic arcade game, players will navigate a maze full of twists, collecting treasures while dodging challenges in a thrilling adventure.</p>
-                <ul><li><a href="Pacman.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Bingo (Team)</h3>
-                <p>Teams of three will hunt for listed items and capture photo evidence. The first team to complete the challenge yells "BINGO!" in victory.</p>
-                <ul><li><a href="Bingo.html">Learn more</a></li></ul>
-            </div>
-    
-            <div id="eventpart">
-                <h3>Outrush (Team)</h3>
-                <p>Outrush is an energetic team game where two teams of four compete to launch footballs into the opponent's zone. Coordination and strategy are key!</p>
-                <ul><li><a href="Outrush.html">Learn more</a></li></ul>
-            </div>
-    
-        </div>
-    </section>
-    
-
-
-
     <div class="event-desc-container" id="event-description">
         <section id="event-desc">
             <h2 class="event-desc__heading">Event Description</h2>
             <p class="event-desc__para">
-                After a hiatus of almost 1 year, Notre Dame Outward Bound Adventure Club (OBAC) is finally back with another season of the biggest 
-                institutionalized adventure festival in the country, the National Adventure Festival.
-                 Following the successful organization of the 5th National Adventure Festival last year and seeing the overwhelming response, 
-                 we have decided to make another statement this year by taking it to the next level in the 6th National Adventure Festival 
-                 with some of our popular events along with some new ones with the hope to live up to your expectation and surpass it. 
-                The 6th National Adventure Festival will take place on May 26th & 27th, 2023 at the premises of Notre Dame College. 
-                Prepare yourself for a grander journey in this edition of National Adventure Festival. 
-                Stay tuned!</p>
-            </section>
+                After a year of eager anticipation, the time for adventure has finally arrived. Following the resounding success of the 7th edition, which set new standards of excellence, the highly awaited event is making its grand return. The Notre Dame Outward Bound Adventure Club (OBAC) is thrilled to present the 8th edition of the National Adventure Festival (NAF), promising a wave of nostalgia, excitement, and unforgettable experiences that will linger long after the event. Get ready for an adrenaline-fueled journey with unique solo and team challenges that will ignite your inner adventurer.</p>
+           <br>
+           The 8th National Adventure Festival will take place on May 16th and 17th, 2025, at the Notre Dame College campus. This time NAF will completely providing more exciting and flagship games like 6 Legs, Outrush, DND and so on. Keep your eyes open to watch the legacy. </section>
         </div>
 
 

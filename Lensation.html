@@ -33,7 +33,7 @@
 <meta name="twitter:description" content="Notre Dame Outward Bound Adventure Club is back with the 6th season of the National Adventure Festival taking place at the premises of Notre Dame College on May 26th and 27th.">
 <meta name="twitter:image" content="https://ndcobac.comimg/8th NAF-01-01.png">
       
-    <link rel="shortcut icon" href="img/title_icon.ico"> <!-- * Favicon -->
+    <link rel="shortcut icon" href="img/naf-banner.png"> <!-- * Favicon -->
     <!-- ICONS -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -64,44 +64,8 @@
 </head>
 <body>
 
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Event Assistant</h3>
-            <div class="chatbot-close" id="close-chatbot">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatbot-messages">
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Hello! I'm your Event Assistant. How can I help you with your event today?</p>
-                </div>
-            </div>
-            <div class="chatbot-message chatbot-response">
-                <div class="message-content">
-                    <p>Please select one of the following questions:</p>
-                </div>
-            </div>
-            <div class="quick-questions">
-                <button class="quick-question-btn" data-question="event-types">What types of events do you organize?</button>
-                <button class="quick-question-btn" data-question="pricing">What are your pricing options?</button>
-                <button class="quick-question-btn" data-question="availability">How do I check date availability?</button>
-                <button class="quick-question-btn" data-question="catering">Do you provide catering services?</button>
-                <button class="quick-question-btn" data-question="contact">How can I contact your team?</button>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Type your message here...">
-            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-
-    <button class="chatbot-toggle" id="toggle-chatbot">
-        <i class="fas fa-comment-dots"></i>
-    </button>
-
     <div class="cursor"></div>
-    
+
     <header class="header">
         <nav class="nav container" style="max-width: 100%;">
             <div class="nav__data">
@@ -170,7 +134,31 @@
                                     <span class="dropdown__title">Team Events</span>
                                     <ul class="dropdown__list">
                                         <li><a href="Bingo.html" class="dropdown__link">Bingo</a></li>
+                                        <li><a href="tictactoe.html" class="dropdown__link">Tic Tac Toe</a></li>
+                                        <li><a href="wallmagazine.html" class="dropdown__link">Wall Magazine</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Limited Slot Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="futsal.html" class="dropdown__link">Futsal</a></li>
                                         <li><a href="Outrush.html" class="dropdown__link">Outrush</a></li>
+                                        <li><a href="sixlegs.html" class="dropdown__link">Six Legs</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-team-line"></i>
+                                    </div>
+                                    <span class="dropdown__title">Signature Events</span>
+                                    <ul class="dropdown__list">
+                                        <li><a href="#" class="dropdown__link">Coming Soon</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -178,7 +166,7 @@
                     </li>
 
                     <li>
-                        <a href="faq.html" class="nav__link">FAQ</a>
+                        <a href="partners.html" class="nav__link">PARTNERS</a>
                     </li>
     
                     <li>
@@ -204,66 +192,84 @@
 
 
     <section id="event-page">
-
         <div id="texture">
             <div id="event-txt">
                 <h3>NOTRE DAME COLLEGE DHAKA ADVENTURE CLUB <span style="color: rgb(248, 171, 248);">SOLO PASS</span></h3> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut culpa eveniet cum laboriosam. Vero vel magnam rem harum officia deserunt enim error inventore dolore, culpa minus magni ut dolor!</p>
+                <p>Experience the thrill of adventure with our exciting solo events! Test your skills in puzzles, observation, physical challenges, and more. Each event is designed to challenge different aspects of your abilities while providing fun and learning opportunities.</p>
             </div>
             <div id="participate-button" onclick="audio.play()">
-                <a href="registration.html" class="animated-button">
+                <a href="https://forms.gle/eFYP2Q3AEoAbgQUn6" class="animated-button">
                   <i class="ri-user-add-fill"></i>
                   Participate Now
                 </a>
               </div>
-            
-        </div>
-
-        <div id="texture1">
-            <div id="event-txt1">
-                <div id="bord">
-                    <img src="ISTARC/Project.jpg">
-                </div><br>
-                <h2>Premium Heading - Lorem Ipsum</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex dicta quo, quis mollitia quaerat, libero minus dignissimos blanditiis ab tenetur tempora beatae sed excepturi reprehenderit neque consequuntur maiores omnis.</p>
-                <br>
-                <h5>Date : 0/0/2000</h5><br>
-                <h5>Type : Offline</h5><br>
-                <h5>Fee : Infinity</h5><br>
-                <h5>Location : Lorem ipsum, dolor srro ratione quos quaerat!</h5>
-
-
-            </div>
-            <div id="rules">
-                <a>Contest Rules:</a><br><br>
-                <h6>General Rules:</h6><br>
-                <h6>1.Participation is open to school and <br> college students.</h6>
-                <h6>2.Participants are required to arrive at<br> least 10 minutes before the designated time. </h6>
-                <h6>3.Individuals can take part in one or more Olympiad<br> events as per the schedule.</h6><br><br><br>
-
-
-                <a>What's included in the Solo Pass:</a><br><br>
-                <h6>IT Olympiad</h6>
-                <h6>Robotics Olympiad</h6>
-                <h6>Google It </h6>
-                <h6>Participants are required to bring all necessary electroni<br> equipment (laptops, mobile devices, multi-plugs, etc.).<br> The organizers will not provide these items.</h6>
-
-
-                <div id="event-part" style="margin: 10px 0;">
-                    <h4>Do you want to participate?</h4><br><br>
-
-                    <div id="participate-button" onclick="audio.play()">
-                        <a href="registration.html" class="animated-button">
-                          <i class="ri-user-add-fill"></i>
-                          Participate Now
-                        </a>
-                      </div>
-                </div>
-
-
-            </div>
         </div>
     </section>
+    
+      <!-- Lensation Event -->
+    <div id="texture1" class="event-section">
+        <div id="event-txt1">
+            <div id="bord">
+                <img src="styles/eventsimg/lensation.jpg" alt="Lensation">
+            </div><br>
+            <h2>Lensation</h2><br>
+            <p>Photography is a transcendent art form that allows you to capture your innermost self through still moments. A single photograph can narrate a story that words often fail to convey, transporting you to another realm. With countless styles of photography, each one reveals different facets of the intricate reality we inhabit.</p>
+            <br>
+            <h5>Event Type: Solo</h5><br>
+            <h5>Categories:</h5>
+            <h6 style="margin-left: 20px;">Junior (Class 6-10)</h6>
+            <h6 style="margin-left: 40px;">A. Digital Camera Photography</h6>
+            <h6 style="margin-left: 40px;">B. Mobile Photography</h6>
+            <h6 style="margin-left: 20px;">Senior (Class 11-12, including HSC Batch-25)</h6>
+            <h6 style="margin-left: 40px;">A. Digital Camera Photography</h6>
+            <h6 style="margin-left: 40px;">B. Mobile Photography</h6>
+        </div>
+        <div id="rules">
+            <a>Contest Rules:</a><br><br>
+            <h6>1. Each participant may submit a maximum of 5 photographs.</h6>
+            <h6>2. Each picture must have an aspect ratio of 16:9.</h6>
+            <h6>3. Images sourced from the internet or copyrighted by others are not permitted.</h6>
+            <h6>4. Original images must be a minimum of 3 MB in size, with a maximum size of 8 MB.</h6>
+            <h6>5. For Category A, the height of the photo must be at least 3000 pixels.</h6>
+            <h6>6. Only JPG or JPEG formats are accepted.</h6>
+            <h6>7. Photos must not contain any borders or watermarks.</h6>
+            <h6>8. Black and white photos are welcome.</h6>
+            <h6>9. Details regarding the submission procedure and deadline will be provided shortly.</h6>
+
+            <a>Themes:</a><br><br>
+            <h6>• Nature & Wildlife Photography</h6>
+            <h6>• Lifestyle Photography</h6>
+            <h6>• Street Photography</h6>
+            <h6>• Travel Photography</h6>
+            <h6>• Black & White Photography</h6>
+            <h6>• Sports Photography</h6>
+            <h6>• Plane Spotting</h6>
+
+            <a>Judging Criteria:</a><br><br>
+            <h6>• Creativity</h6>
+            <h6>• Originality</h6>
+            <h6>• Technical skill</h6>
+
+            <a>Prize Details:</a><br><br>
+            <h6>• Winners in each category (First, Second, and Third place) will receive:</h6>
+            <h6 style="margin-left: 20px;">- Crest</h6>
+            <h6 style="margin-left: 20px;">- Certificate of Excellence</h6>
+            <h6 style="margin-left: 20px;">- Framed print of their work</h6>
+            <h6>• All participants will be awarded:</h6>
+            <h6 style="margin-left: 20px;">- Certificate of Participation</h6>
+            <h6 style="margin-left: 20px;">- Photo frames</h6>
+
+            <div id="event-part" style="margin: 10px 0;">
+                <h4>Ready to showcase your photography skills?</h4><br>
+                <div id="participate-button" onclick="audio.play()">
+                    <a href="https://forms.gle/eFYP2Q3AEoAbgQUn6" class="animated-button">
+                      <i class="ri-user-add-fill"></i>
+                      Participate Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="sponsor">
         <div id="cent-wrapper">
@@ -320,7 +326,7 @@
                 <i class="fab fa-instagram"></i>
                 <span class="social-tooltip">Instagram</span>
               </a>
-              <a href="mailto:obac6thnaf@gmail.com" class="social-icon">
+              <a href="mailto:obac8thnaf@gmail.com" class="social-icon">
                 <i class="fas fa-envelope"></i>
                 <span class="social-tooltip">Email Us</span>
               </a>
@@ -335,7 +341,7 @@
                 <div class="contact-icon">
                   <i class="fas fa-envelope"></i>
                 </div>
-                <p>obac6thnaf@gmail.com</p>
+                <p>obac8thnaf@gmail.com</p>
               </div>
               <div class="contact-item">
                 <div class="contact-icon">
@@ -351,7 +357,7 @@
             <div class="banner-container">
               <img src="img/naf-banner.png" alt="NAF Banner" class="banner-hover">
               <div class="banner-overlay">
-                <span>6th NAF</span>
+                <span>8th NAF</span>
                 <p>Adventure Awaits</p>
               </div>
             </div>

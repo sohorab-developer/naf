@@ -143,8 +143,9 @@ picture {
 
 
 .buy-ticket-btn {
-  background:linear-gradient(10deg, rgb(115 29 253), rgb(255 0 198));
-  color: white !important;
+  /* background:linear-gradient(45deg, rgb(115 29 253), rgb(255 0 198)); */
+  background-color: #d535ad;
+  color: rgb(255, 255, 255) !important;
   padding: 20px 40px;
   border-radius: 5px;
   font-weight: 600;
@@ -170,7 +171,7 @@ picture {
 }
 
 .buy-ticket-btn:hover {
-  background-color: #245c36; 
+  background-color: #ff00bb; 
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

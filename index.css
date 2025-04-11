@@ -538,6 +538,16 @@ input[type=submit]:hover {
       width: 90%;
       margin: 0px 10px;
   }
+  #flex {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0px;
+    top: -60%;
+    position: relative;
+}
 }
 @media (max-width: 480px) {
   form {

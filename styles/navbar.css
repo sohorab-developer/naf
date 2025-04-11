@@ -34,7 +34,7 @@
 
 body {
     font-family: var(--body-font);
-    background:linear-gradient(130deg, #3f004f, #000000);
+    background:linear-gradient(130deg, #2d0038, #000000);
     color: white;
     overflow-x: hidden;
     display: flex;
@@ -57,14 +57,14 @@ a {
 
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    CONTAIN-INTRINSIC-WIDTH: AUTO 100PX;
     width: 100%;
     box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
-    
-    z-index: var(--z-fixed);
     border-bottom: 3px double rgba(255, 255, 255, 0.116);
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    background-color: #fac7ff;
 }
 
 
@@ -81,7 +81,7 @@ a {
     display:flex;
     align-items: center;
     column-gap: 0.25rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: var(--font-semi-bold);
     transition: color 0.3s;
     justify-content: center;
@@ -106,7 +106,7 @@ a {
 .nav__toggle-menu,
 .nav__toggle-close {
     font-size: 1.25rem;
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     display: grid;
     place-items: center;
@@ -120,7 +120,7 @@ a {
 }
 
 .nav__link {
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: var(--font-semi-bold);
     padding: 1.25rem 1.5rem;
     display: flex;
@@ -310,7 +310,7 @@ a {
         transition: top 0.4s, opacity 0.3s;
     }
     .dropdown__content {
-        grid-template-columns: repeat(4, max-content);
+        grid-template-columns: repeat(5, max-content);
         column-gap: 6rem;
         max-width: 1120px;
         margin-inline: auto;

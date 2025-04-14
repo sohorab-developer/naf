@@ -191,8 +191,8 @@ main{
     transform: translateX(3px);
 }
 
-.crypto .event-bg {
-    background-image: url('eventsimg/.png');
+.solopass .event-bg {
+    background-image: url('eventsimg/solopass.png');
 }
 
 .code .event-bg {

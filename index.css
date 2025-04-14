@@ -562,116 +562,19 @@ input[type=submit]:hover {
   }
 }
 
-/* --------------------------------TCIKETS------------------------------- */
-/* .ticket-types-container {
-  padding: 5rem 0rem;
-  background: var(--ticket-btn);
-  color: #fff;
-}
-#ticket-types {
-  width: 75%;
-  margin: 0 auto;
-}
-.ticket-types__heading {
-  color: var(--hero-txt);
-  font-weight: 400;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.ticket-types__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  line-height: 2rem;
-  padding: 1rem 0rem;
-}
 
-.ticket {
-  padding: 1rem;
-  background: var(--ticket-bg);
-}
-
-.ticket__type {
-  color: var(--hero-txt);
-  text-align: center;
-  font-weight: 400;
-}
-
-.ticket__price {
-  text-align: center;
-  padding: 0.5rem 0rem;
-}
-.ticket__price__text {
-  font-family: HelveticaNeueLight;
-}
-.ticket__price__value {
-  font-size: 1.5rem;
+.event-tag {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff5733;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
   font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
-.ticket__btn {
-  background-color: var(--ticket-btn);
-  text-decoration: none;
-  cursor: pointer;
-  color: var(--nav-btn-text);
-  transition: all 0.2s;
-  padding: 0.15rem 1rem;
-  margin: 1rem 3rem;
-  font-size: 0.8rem;
-  text-align: center;
-  display: block;
-}
-.ticket__btn:hover {
-  filter: brightness(50%);
-}
-.ticket hr {
-  border: none;
-  height: 1px;
-  background-color: #fff;
-}
-.ticket__features {
-  padding: 1rem;
-} */
-/* ---------------------------------PARTNERS-------------------------------- */
-/* .partners-container {
-  padding: 5rem 0rem;
-}
-#partners {
-  width: 75%;
-  margin: 0 auto;
-}
-.partners__heading {
-  color: var(--navcolor);
-  font-weight: 400;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.partners-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  /*   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; */
-  /* gap: 4rem; 
-} */
-/* .partner {
-  color: #000;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-}
-
-.partner > img {
-  width: 110px;
-  margin: auto;
-  padding: 0.5rem 0rem;
-}
-.partner-name {
-  font-size: 0.9rem;
-  padding: 0.5rem 0rem;
-  font-weight: 400;
-} */
 
 /* --------------------------------RESPONSIVE ------------------------------- */
 

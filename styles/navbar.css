@@ -203,7 +203,7 @@ a {
 }
 
 .dropdown__container {
-    background-color: hsl(145, 95%, 7%);
+    background-color: hsl(300deg 100% 12.67%);
     height: 0;
     overflow: hidden;
     transition: height 0.4s;
@@ -232,7 +232,7 @@ a {
 }
 
 .dropdown__title {
-    font-size: var(--small-font-size);
+    /* font-size: var(--small-font-size); */
     font-weight: var(--font-semi-bold);
     color:rgb(255, 255, 255);
 }
@@ -242,7 +242,7 @@ a {
 }
 
 .dropdown__link {
-    font-size: var(--smaller-font-size);
+    /* font-size: var(--smaller-font-size); */
     font-weight: var(--font-medium);
     color: rgb(255, 255, 255);
     transition: color 0.3s;

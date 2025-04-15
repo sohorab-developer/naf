@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/common.css">
@@ -60,20 +60,96 @@
 
   gtag('config', 'G-4EPM5KNSVD');
 </script>
+
+<style>
+    [data-aos] {
+        transition-property: transform, opacity;
+    }
+    
+    [data-aos="fade-up"] {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    
+    [data-aos="fade-down"] {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    
+    [data-aos="fade-right"] {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    
+    [data-aos="fade-left"] {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    
+    [data-aos="zoom-in"] {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    
+    [data-aos="flip-up"] {
+        transform: perspective(1000px) rotateX(-90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+    
+    [data-aos="flip-down"] {
+        transform: perspective(1000px) rotateX(90deg);
+        opacity: 0;
+        transform-origin: bottom;
+    }
+    
+    .main__info__title img {
+        transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+    
+    .event-item {
+        transition: all 0.4s ease;
+    }
+    
+    .event-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    [data-aos-delay="100"] {
+        transition-delay: 100ms;
+    }
+    
+    [data-aos-delay="200"] {
+        transition-delay: 200ms;
+    }
+    
+    [data-aos-delay="300"] {
+        transition-delay: 300ms;
+    }
+    
+    [data-aos-delay="400"] {
+        transition-delay: 400ms;
+    }
+    
+    [data-aos-delay="500"] {
+        transition-delay: 500ms;
+    }
+</style>
+
 </head>
 <body>
 
     <div class="cursor"></div>
 
-
     <header class="header">
         <nav class="nav container" style="max-width: 100%;">
             <div class="nav__data">
-                <a href="index.html" class="nav__logo">
+                <a href="index.html" class="nav__logo" data-aos="fade-right" data-aos-delay="100">
                     <img src="img/obac-logo.png" alt="OBAC Logo">
                 </a>
     
-                <div class="nav__toggle" id="nav-toggle">
+                <div class="nav__toggle" id="nav-toggle" data-aos="fade-left" data-aos-delay="100">
                     <i class="ri-menu-line nav__toggle-menu"></i>
                     <i class="ri-close-line nav__toggle-close"></i>
                 </div>
@@ -89,8 +165,6 @@
                     <li>
                         <a href="about.html" class="nav__link">ABOUT</a>
                     </li>
-    
-                    
     
                     <!--=============== DROPDOWN: EVENTS ===============-->
                     <li class="dropdown__item">
@@ -177,34 +251,33 @@
     <div class="main-container">
         <main class="main">
             <section class="main__info">
-                <div class="main__info__title">
+                <div class="main__info__title" data-aos="zoom-in" data-aos-delay="200">
                     <a href="https://www.facebook.com/events/1317247982618987?acontext=%7B%22event_action_history%22%3A[]%7D" target="_blank">
                         <img src="img/8th_NAF-01-01-removebg-preview.png" alt="" srcset="">
                     </a> 
                 </div>
-                <div class="main__info__venue">
+                <div class="main__info__venue" data-aos="fade-right" data-aos-delay="300">
                     <span class="hero-blue">VENUE: </span>  NOTRE DAME COLLEGE, DHAKA
                 </div>
-                <div class="main__info__date">
+                <div class="main__info__date" data-aos="fade-left" data-aos-delay="300">
                     <span class="hero-blue">DATE: </span> 16-17 May
                 </div>
-                <div class="main__info__hostedBy">
+                <div class="main__info__hostedBy" data-aos="fade-up" data-aos-delay="400">
                     <p class="hero-blue">HOSTED BY:</p>
                     <p>NOTRE DAME OUTWARD BOUND <br>
                     ADVENTURE CLUB</p>
                 </div>
-                <a href="#buytickets" class="nav__link buy-ticket-btn" id="btn-nav-link">
+                <a href="#buytickets" class="nav__link buy-ticket-btn" id="btn-nav-link" data-aos="flip-up" data-aos-delay="500">
                     <i class="fa-solid fa-ticket"></i> BUY TICKET
                 </a>
-                
             </section>
             <section class="main__img">
-                <div class="main__img__banner">
+                <div class="main__img__banner" data-aos="fade-left" data-aos-delay="200">
                    <a href="https://www.facebook.com/events/1147529189243909/" target="_blank">
                        <img src="img/NAF Banner-01.png" alt="" srcset="">
                     </a> 
                 </div>
-                <div class="main__img__timer">
+                <div class="main__img__timer" data-aos="fade-up" data-aos-delay="400">
                     <div class="timer-div">
                         <p class="timer-div__value days">00</p>
                         <p class="timer-div__txt">Days</p>
@@ -223,33 +296,33 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        <section id="sponsor">
+        
+        <section id="sponsor" data-aos="fade-up" data-aos-delay="100">
             <div id="cent-wrapper">
                 <div class="wrapper">
-                    <div class="item item1">
+                    <div class="item item1" data-aos="fade-up" data-aos-delay="100">
                         <h3>Sponsor 1</h3>
                     </div>
-                    <div class="item item2">
+                    <div class="item item2" data-aos="fade-up" data-aos-delay="200">
                         <h3>Sponsor 2</h3>
                     </div>
-                    <div class="item item3">
+                    <div class="item item3" data-aos="fade-up" data-aos-delay="300">
                         <h3>Sponsor 3</h3>
                     </div>
-                    <div class="item item4">
+                    <div class="item item4" data-aos="fade-up" data-aos-delay="400">
                         <h3>Sponsor 4</h3>
                     </div>
-                    <div class="item item5">
+                    <div class="item item5" data-aos="fade-up" data-aos-delay="100">
                         <h3>Sponsor 5</h3>
                     </div>
-                    <div class="item item6">
+                    <div class="item item6" data-aos="fade-up" data-aos-delay="200">
                         <h3>Sponsor 6</h3>
                     </div>
-                    <div class="item item7">
+                    <div class="item item7" data-aos="fade-up" data-aos-delay="300">
                         <h3>Sponsor 7</h3>
                     </div>
-                    <div class="item item8">
+                    <div class="item item8" data-aos="fade-up" data-aos-delay="400">
                         <h3>Sponsor 8</h3>
                     </div>
                 </div>
@@ -259,13 +332,13 @@
 
     <section id="intro">
         <div id="border">
-            <div id="summary">
+            <div id="summary" data-aos="fade-right" data-aos-delay="100">
                 <a>Background of Adventure Festival</a>
                 <h2>8<sup>TH</sup> NATIONAL ADVENTURE FESTIVAL 2025</h2>
-                <p>The National Adventure Festival serves as an exciting platform for young people to venture beyond the confines of classrooms and textbooks. It motivates students to step outside their comfort zones, tackle challenges head-on, and cultivate essential skills in leadership, teamwork, and problem-solving. This event is not solely about excitement; it’s about uncovering one’s true potential through experiences that seamlessly blend enjoyment, education, and physical activity. Over the years, the festival has been instrumental in fostering confidence and instilling a sense of bravery, discipline, and responsibility in the younger generation.
+                <p>The National Adventure Festival serves as an exciting platform for young people to venture beyond the confines of classrooms and textbooks. It motivates students to step outside their comfort zones, tackle challenges head-on, and cultivate essential skills in leadership, teamwork, and problem-solving. This event is not solely about excitement; it's about uncovering one's true potential through experiences that seamlessly blend enjoyment, education, and physical activity. Over the years, the festival has been instrumental in fostering confidence and instilling a sense of bravery, discipline, and responsibility in the younger generation.
                 </p>
             </div>
-            <div id="sum">
+            <div id="sum" data-aos="fade-left" data-aos-delay="200">
                 <a>About Our Adventure Festival</a>
                 <p>The Adventure Festival is designed to create lasting memories by uniting students from various institutions under a shared spirit of exploration and friendship. Through a combination of outdoor challenges, strategic games, and engaging activities, this event promotes physical fitness, mental resilience, and social bonds. Recognized on a national level, the festival continues to grow with increased participation, innovative concepts, and meaningful outcomes — shaping the youth into confident and conscientious citizens for the future.</p>
             </div>
@@ -280,10 +353,10 @@
         </div>
         
         <div class="event-categories">
-            <div class="category">
+            <div class="category" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="category-title">Solo Events</h3>
                 <ul class="events-list">
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="event-info">
                             <div class="event-name">Crypto Grid</div>
                         </div>
@@ -293,7 +366,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="150">
                         <div class="event-info">
                             <div class="event-name">Code Names</div>
                         </div>
@@ -303,7 +376,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="200">
                         <div class="event-info">
                             <div class="event-name">Hidden Object Quest</div>
                         </div>
@@ -313,7 +386,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="250">
                         <div class="event-info">
                             <div class="event-name">Pin Point on Map</div>
                         </div>
@@ -323,7 +396,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="300">
                         <div class="event-info">
                             <div class="event-name">Obstacle Ground</div>
                         </div>
@@ -333,7 +406,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="350">
                         <div class="event-info">
                             <div class="event-name">Lensation</div>
                         </div>
@@ -343,7 +416,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-right" data-aos-delay="400">
                         <div class="event-info">
                             <div class="event-name">Pacman</div>
                         </div>
@@ -356,10 +429,10 @@
                 </ul>
             </div>
             
-            <div class="category">
+            <div class="category" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="category-title">Team Events</h3>
                 <ul class="events-list">
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-left" data-aos-delay="100">
                         <div class="event-info">
                             <div class="event-name">Bingo</div>
                         </div>
@@ -369,7 +442,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-left" data-aos-delay="150">
                         <div class="event-info">
                             <div class="event-name">Tic Tac Toe</div>
                         </div>
@@ -379,7 +452,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-left" data-aos-delay="200">
                         <div class="event-info">
                             <div class="event-name">Wall Magazine</div>
                         </div>
@@ -392,12 +465,10 @@
                 </ul>
             </div>
             
-
-            <div class="category">
-
+            <div class="category" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="category-title">Slot Limited Events</h3>
                 <ul class="events-list">
-                    <li class="event-item slot-limited">
+                    <li class="event-item slot-limited" data-aos="fade-down" data-aos-delay="100">
                         <div class="event-info">
                             <div class="event-name">Outrush <span class="upcoming-badge">Available Soon</span> </div>
                         </div>
@@ -407,7 +478,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item slot-limited">
+                    <li class="event-item slot-limited" data-aos="fade-down" data-aos-delay="150">
                         <div class="event-info">
                             <div class="event-name">Futsal <span class="upcoming-badge">Available Soon</span></div>
                         </div>
@@ -417,7 +488,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="event-item slot-limited">
+                    <li class="event-item slot-limited" data-aos="fade-down" data-aos-delay="200">
                         <div class="event-info">
                             <div class="event-name">6 Legs <span class="upcoming-badge">Available Soon</span></div>
                         </div>
@@ -429,10 +500,9 @@
                     </li>
                 </ul>
 
-
                 <h3 class="category-title">Signature Events</h3>
                 <ul class="events-list">
-                    <li class="event-item">
+                    <li class="event-item" data-aos="fade-up" data-aos-delay="100">
                         <div class="event-info">
                             <div class="event-name">Signature <span class="upcoming-badge">Upcoming</span></div>
                         </div>
@@ -443,20 +513,12 @@
                         </div>
                     </li>
                 </ul>
-                
-
-
             </div>
         </div>
     </div>
 
-
-
-    
-
-
     <div class="event-desc-container" id="event-description">
-        <section id="event-desc">
+        <section id="event-desc" data-aos="zoom-in" data-aos-delay="100">
             <h2 class="event-desc__heading">Event Description</h2>
             <p class="event-desc__para">
                 After a year of eager anticipation, the time for adventure has finally arrived. Following the resounding success of the 7th edition, which set new standards of excellence, the highly awaited event is making its grand return. The Notre Dame Outward Bound Adventure Club (OBAC) is thrilled to present the 8th edition of the National Adventure Festival (NAF), promising a wave of nostalgia, excitement, and unforgettable experiences that will linger long after the event. Get ready for an adrenaline-fueled journey with unique solo and team challenges that will ignite your inner adventurer.</p>
@@ -464,8 +526,7 @@
            The 8th National Adventure Festival will take place on May 16th and 17th, 2025, at the Notre Dame College campus. This time NAF will completely providing more exciting and flagship games like 6 Legs, Outrush, DND and so on. Keep your eyes open to watch the legacy. </section>
         </div>
 
-
-        <footer class="animated-footer">
+        <footer class="animated-footer" data-aos="fade-up" data-aos-delay="100">
             <div class="footer-wave">
               <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="wave-fill"></path>
@@ -475,26 +536,26 @@
             </div>
           
             <div class="footer-content">
-              <div class="footer-column logo-column">
+              <div class="footer-column logo-column" data-aos="fade-right" data-aos-delay="100">
                 <img src="img/obac-logo-footer.png" alt="NDC OBAC" class="logo-hover">
                 <div class="footer__logo__name">Notre Dame Outward Bound<br>Adventure Club</div>
                 <div class="social-links">
-                  <a href="https://www.facebook.com/ndcobac" target="_blank" class="social-icon">
+                  <a href="https://www.facebook.com/ndcobac" target="_blank" class="social-icon" data-aos="zoom-in" data-aos-delay="100">
                     <i class="fab fa-facebook-f"></i>
                     <span class="social-tooltip">Facebook</span>
                   </a>
-                  <a href="https://www.instagram.com/ndcobac.official/" target="_blank" class="social-icon">
+                  <a href="https://www.instagram.com/ndcobac.official/" target="_blank" class="social-icon" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fab fa-instagram"></i>
                     <span class="social-tooltip">Instagram</span>
                   </a>
-                  <a href="mailto:obac8thnaf@gmail.com" class="social-icon">
+                  <a href="mailto:obac8thnaf@gmail.com" class="social-icon" data-aos="zoom-in" data-aos-delay="300">
                     <i class="fas fa-envelope"></i>
                     <span class="social-tooltip">Email Us</span>
                   </a>
                 </div>
               </div>
           
-              <div class="footer-column contact-column">
+              <div class="footer-column contact-column" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="section-title">Contact Us <i class="fas fa-chevron-down"></i></h3>
                 <div class="contact-info">
                   <div class="contact-item">
@@ -512,7 +573,7 @@
                 </div>
               </div>
 
-              <div class="footer-column banner-column">
+              <div class="footer-column banner-column" data-aos="fade-left" data-aos-delay="300">
                 <div class="banner-container">
                   <img src="img/naf-banner.png" alt="NAF Banner" class="banner-hover">
                   <div class="banner-overlay">
@@ -548,32 +609,22 @@
                       <a href="https://sohorab-developer.github.io/portfolio" class="social-icon">
                         <i class="fas fa-globe"></i>
                       </a>
-                      
                     </div>
                   </div>
                 </div>
               </div>
+          </footer>              
               
-              <script>
-                
-                document.querySelectorAll('.event-link').forEach(link => {
-                    link.addEventListener('click', (e) => {
-                        
-                        console.log(`Navigating to: ${e.target.closest('a').href}`);
-                    });
-                });
-            </script>
-              <script>
-              document.querySelector('.scroll-top').addEventListener('click', () => {
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth'
-                });
-              });
-              </script>
-          </footer>
-   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
+
+        AOS.init({
+            duration: 800, 
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true,
+        });
         
         document.querySelectorAll('.event-link').forEach(link => {
             link.addEventListener('click', (e) => {
@@ -581,6 +632,16 @@
             });
         });
     </script>
+    
+    <script>
+        document.querySelector('.scroll-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
     <script src="js/app.js"></script>
     <script src="js/cursor.js"></script>
     <script src="js/nav.js"></script>

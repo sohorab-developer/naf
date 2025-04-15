@@ -1,4 +1,76 @@
+[data-aos] {
+  transition-property: transform, opacity;
+}
 
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+[data-aos="flip-up"] {
+  transform: perspective(1000px) rotateX(-90deg);
+  opacity: 0;
+  transform-origin: top;
+}
+
+[data-aos="flip-down"] {
+  transform: perspective(1000px) rotateX(90deg);
+  opacity: 0;
+  transform-origin: bottom;
+}
+
+.main__info__title img {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.event-item {
+  transition: all 0.4s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+[data-aos-delay="100"] {
+  transition-delay: 100ms;
+}
+
+[data-aos-delay="200"] {
+  transition-delay: 200ms;
+}
+
+[data-aos-delay="300"] {
+  transition-delay: 300ms;
+}
+
+[data-aos-delay="400"] {
+  transition-delay: 400ms;
+}
+
+[data-aos-delay="500"] {
+  transition-delay: 500ms;
+}
 
 .na_ticket{
   color:white !important;

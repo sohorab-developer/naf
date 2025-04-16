@@ -228,6 +228,12 @@ main{
     background-image: url('eventsimg/TTT.png');
 }
 
-.wallmag .event-bg {
-    background-image: url('eventsimg/wallmagazine.png');
+.outrush .event-bg {
+    background-image: url('eventsimg/o.png');
+}
+.sixlegs .event-bg {
+    background-image: url('eventsimg/6L.png');
+}
+.futsal .event-bg {
+    background-image: url('eventsimg/fsal.png');
 }

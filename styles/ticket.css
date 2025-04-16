@@ -364,7 +364,7 @@
     left: 0;
     width: 50px;
     height: 3px;
-    background: linear-gradient(90deg, #00b4db, #0083b0);
+    background: linear-gradient(90deg, #ff00b3, #ae00ff);
   }
   
   .social-links {
@@ -386,7 +386,7 @@
   }
   
   .social-icon:hover {
-    background: linear-gradient(45deg, #00b4db, #0083b0);
+    background: linear-gradient(45deg, #ff00b3, #ae00ff);
     transform: translateY(-5px);
   }
   
@@ -454,7 +454,7 @@
   .contact-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(45deg, #00b4db, #0083b0);
+    background: linear-gradient(45deg, #ff00ff, #5b00b0);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -507,7 +507,7 @@
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    color: #00b4db;
+    color: #ff009d;
   }
   
 
@@ -565,7 +565,7 @@
   }
   
   .footer-logo svg {
-    color: #4facfe;
+    color: #ff009d;
     width: 20px;
     height: 20px;
   }
@@ -573,7 +573,7 @@
   .footer-logo span {
     font-weight: 600;
     font-size: 1.1rem;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background: linear-gradient(to right, #ff0095, #8c00fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -596,7 +596,7 @@
   }
   
   .creator-link i {
-    color: #4facfe;
+    color: #baa7ff;
     font-size: 0.9rem;
   }
   
@@ -607,7 +607,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    background: linear-gradient(90deg, #ff00b3, #ae00ff);
     transition: width 0.3s ease;
   }
   
@@ -616,7 +616,7 @@
   }
   
   .creator-link:hover {
-    color: #4facfe;
+    color: #e205ff;
   }
   
   .pulse {
@@ -644,7 +644,7 @@
   }
   
   .social-icon:hover {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #ff00b3, #ae00ff);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 242, 254, 0.3);
   }

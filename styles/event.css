@@ -240,3 +240,7 @@ main{
 .wallmagazine .event-bg {
     background-image: url('eventsimg/wallmagazine.png');
 }
+
+.dungeon .event-bg {
+    background-image: url('eventsimg/dungeon.png');
+}
